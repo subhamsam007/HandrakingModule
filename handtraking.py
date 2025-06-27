@@ -38,7 +38,7 @@ while True:
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 print(id, cx, cy)
                 # if id == 4:
-                cv2.circle(frame, (cx, cy), 5, (255, 0, 255), cv2.FILLED)
+                cv2.circle(frame, (cx, cy), 5, (255,100, 255), cv2.FILLED)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
