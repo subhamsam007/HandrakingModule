@@ -26,7 +26,7 @@ while True:
         break
     imgRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     results = hands.process(imgRGB)
-    # print(results.multi_hand_landmarks) # Print the landmarks for each detected hand that hand is detected
+    print(results.multi_hand_landmarks) # Print the landmarks for each detected hand that hand is detected
 
 
     if results.multi_hand_landmarks:

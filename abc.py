@@ -25,7 +25,7 @@ cap = cv2.VideoCapture(0)
 
 mphands = mp.solutions.hands
 mpDraw = mp.solutions.drawing_utils
-hands = mphands.Hands(max_num_hands = 2, min_detection_confidence=0.7, min_tracking_confidence=0.5)
+hands = mphands.Hands(max_num_hands = 1, min_detection_confidence=0.7, min_tracking_confidence=0.5)
 hand_connections_style = mpDraw.DrawingSpec(color=(0, 255, 0), thickness=5)  # Green connections
 previous = -1
 is_muted = False
@@ -40,7 +40,7 @@ while True:
         hand_keyPoints = results.multi_hand_landmarks[0]
 
         count = count_fingers(hand_keyPoints)
-        print(count)
+        # print(count)
         if previous != count:
             if count == 5:
                 pay.press("space")
