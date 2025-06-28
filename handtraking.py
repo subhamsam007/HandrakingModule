@@ -36,7 +36,7 @@ while True:
                 # print(id, lm)
                 h, w, c = frame.shape
                 cx, cy = int(lm.x * w), int(lm.y * h)
-                print(id, cx, cy)
+                # print(id, cx, cy)
                 # if id == 4:
                 cv2.circle(frame, (cx, cy), 5, (255,100, 255), cv2.FILLED)
 #for fps calculation 
