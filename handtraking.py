@@ -39,7 +39,7 @@ while True:
                 print(id, cx, cy)
                 # if id == 4:
                 cv2.circle(frame, (cx, cy), 5, (255,100, 255), cv2.FILLED)
-
+#for fps calculation 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
