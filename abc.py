@@ -40,7 +40,7 @@ while True:
         hand_keyPoints = results.multi_hand_landmarks[0]
 
         count = count_fingers(hand_keyPoints)
-        # print(count)
+        print(count)
         if previous != count:
             if count == 5:
                 pay.press("space")
